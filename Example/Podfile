@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HRSafeComponents_Example' do
+  pod 'HRSafeComponents', :path => '../'
+
+  target 'HRSafeComponents_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
