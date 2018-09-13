@@ -1,0 +1,6 @@
+framework module HRSafeComponents {
+  umbrella header "HRSafeComponents-umbrella.h"
+
+  export *
+  module * { export * }
+}

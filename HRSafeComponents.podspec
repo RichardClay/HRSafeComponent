@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lz/HRSafeComponents'
+  s.homepage         = 'https://www.jianshu.com/u/8dc7dec8fb15'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lz' => '750460196@qq.com' }
-  s.source           = { :git => 'https://github.com/lz/HRSafeComponents.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://gitee.com/uiview/HRSafeComponent.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

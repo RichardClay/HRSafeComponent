@@ -1,0 +1,16 @@
+PODS:
+  - HRSafeComponents (0.1.0)
+
+DEPENDENCIES:
+  - HRSafeComponents (from `../`)
+
+EXTERNAL SOURCES:
+  HRSafeComponents:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HRSafeComponents: be6aaa7b400e9ec34810271ad2ddca1ff6258794
+
+PODFILE CHECKSUM: 0c6b02b0957679d6b32e9949adf1d5890b4a9f2a
+
+COCOAPODS: 1.5.3
