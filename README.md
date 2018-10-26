@@ -1,6 +1,7 @@
 # HRSafeComponent
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![CI Status](https://img.shields.io/travis/lz/HRSafeComponent.svg?style=flat)](https://travis-ci.org/lz/HRSafeComponent)
 [![Version](https://img.shields.io/cocoapods/v/HRSafeComponent.svg?style=flat)](https://cocoapods.org/pods/HRSafeComponent)
 [![License](https://img.shields.io/cocoapods/l/HRSafeComponent.svg?style=flat)](https://cocoapods.org/pods/HRSafeComponent)
@@ -29,6 +30,8 @@ lz, 750460196@qq.com
 
 HRSafeComponent is available under the MIT license. See the LICENSE file for more info.
 =======
+=======
+>>>>>>> 0678bf9a98717a37987d339a02f4e16ee85d75da
 #### 项目介绍
 {**以下是码云平台说明，您可以替换为您的项目简介**
 码云是开源中国推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
@@ -65,5 +68,9 @@ HRSafeComponent is available under the MIT license. See the LICENSE file for mor
 3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
 4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
 5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
+<<<<<<< HEAD
+6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+>>>>>>> 0678bf9a98717a37987d339a02f4e16ee85d75da
+=======
 6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
 >>>>>>> 0678bf9a98717a37987d339a02f4e16ee85d75da
