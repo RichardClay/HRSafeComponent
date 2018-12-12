@@ -1,10 +1,3 @@
-//
-//  NSArray+Safe.m
-// https://github.com/lsmakethebest/LSSafeProtector
-//
-//  Created by lz on 2017/4/20.
-//  Copyright © 2018年 liusong. All rights reserved.
-//
 
 #import "NSArray+Safe.h"
 #import <objc/runtime.h>

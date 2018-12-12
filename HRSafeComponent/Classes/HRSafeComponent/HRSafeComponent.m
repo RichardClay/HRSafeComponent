@@ -3,9 +3,9 @@
 
 @implementation HRSafeComponent
 
-+(void)openSafeProtectorWithIsDebug:(BOOL)isDebug block:(HRSafeCatchBlock)block
++(void)openSafeProtectorWithIsDebug:(BOOL)isDebug isOpen:(BOOL)isOpenCrashSafe block:(HRSafeCatchBlock)block
 {
-    [NSObject openAllSafeProtectorWithIsDebug:isDebug block:block];
+    [NSObject openAllSafeProtectorWithIsDebug:isDebug isOpen:isOpenCrashSafe block:block];
 }
     
 @end

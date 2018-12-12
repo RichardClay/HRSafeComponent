@@ -1,9 +1,4 @@
-//
-//  NSObject+Safe.h
-// https://github.com/lsmakethebest/LSSafeProtector
-//
-//  Created by lz on 2017/4/20.
-//  Copyright © 2018年 lz. All rights reserved.
+
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
 
@@ -48,7 +43,7 @@ typedef void(^HRSafeCatchBlock)(NSException *exception,HRSafeCatchCrashType cras
 @interface  NSObject (Safe)
 
 //打开目前所支持的所有安全保护 回调block
-+ (void)openAllSafeProtectorWithIsDebug:(BOOL)isDebug block:(HRSafeCatchBlock)block;
++ (void)openAllSafeProtectorWithIsDebug:(BOOL)isDebug isOpen:(BOOL)isOpen  block:(HRSafeCatchBlock)block;
 
 //打开当前类安全保护
 + (void)openSafeProtector;

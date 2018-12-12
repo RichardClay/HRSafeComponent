@@ -1,9 +1,3 @@
-//
-//  NSObject+Safe.m
-// https://github.com/lsmakethebest/LSSafeProtector
-//
-//  Created by liusong on 2018/4/20.
-//  Copyright © 2018年 liusong. All rights reserved.
 
 #import "NSObject+Safe.h"
 #import <UIKit/UIKit.h>
@@ -42,8 +36,11 @@ static  HRSafeCatchBlock       lsSafeProtectorBlock;
      }
 }
 //打开目前所支持的所有安全保护
-+(void)openAllSafeProtectorWithIsDebug:(BOOL)isDebug block:(HRSafeCatchBlock)block
++(void)openAllSafeProtectorWithIsDebug:(BOOL)isDebug isOpen:(BOOL)isOpen  block:(HRSafeCatchBlock)block
 {
+    if (!isOpen) {
+        return;
+    }
     if ([NSStringFromClass([self class]) isEqualToString:@"NSObject"]) {
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{

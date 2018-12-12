@@ -202,10 +202,12 @@ static NSMutableDictionary *KVOSafeDeallocCrashes() {
     
     @try {
         LSKVOSafeLog(@"%@ safe_removeObserver %@  keyPath:%@",[self class],[observer class],keyPath);
-        if (isContext) {
-            [self safe_removeObserver:observer forKeyPath:keyPath context:context];
-        }else{
-            [self safe_removeObserver:observer forKeyPath:keyPath];
+        if (!isUser) {
+            if (isContext) {
+                [self safe_removeObserver:observer forKeyPath:keyPath context:context];
+            }else{
+                [self safe_removeObserver:observer forKeyPath:keyPath];
+            }
         }
     }
     @catch (NSException *exception) {
