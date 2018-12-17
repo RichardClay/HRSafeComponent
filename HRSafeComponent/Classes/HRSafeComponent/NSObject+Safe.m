@@ -54,7 +54,6 @@ static  HRSafeCatchBlock       lsSafeProtectorBlock;
             [NSAttributedString openSafeProtector];
             [NSMutableAttributedString openSafeProtector];
             [NSNotificationCenter openSafeProtector];
-            [NSObject openKVOSafeProtector];
             if (isDebug) {
                  ls_safe_logType = HRSafeCatchLogTypeAll;
             }else{
