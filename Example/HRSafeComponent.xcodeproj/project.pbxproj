@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14F00502F3AE71F848484FFE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		14F00502F3AE71F848484FFE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4F4D1D712E8BA949D12E34BC /* Pods-HRSafeComponent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRSafeComponent_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRSafeComponent_Example/Pods-HRSafeComponent_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HRSafeComponent_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRSafeComponent_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,8 +61,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BDB3CD8926EF9B51E74A586 /* Pods_HRSafeComponent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HRSafeComponent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FF92C0211677EB81FF145EC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		971BE097931719F0A3935AD7 /* HRSafeComponent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HRSafeComponent.podspec; path = ../HRSafeComponent.podspec; sourceTree = "<group>"; };
+		8FF92C0211677EB81FF145EC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		971BE097931719F0A3935AD7 /* HRSafeComponent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HRSafeComponent.podspec; path = ../HRSafeComponent.podspec; sourceTree = "<group>"; };
 		DA44484D88925B88905F4B66 /* Pods_HRSafeComponent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HRSafeComponent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC082614CA4ADA1D1398380 /* Pods-HRSafeComponent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRSafeComponent_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRSafeComponent_Example/Pods-HRSafeComponent_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DF935EA7B4FCB84B25614EFF /* Pods-HRSafeComponent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRSafeComponent_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRSafeComponent_Tests/Pods-HRSafeComponent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -248,6 +248,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = lz;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 4C4464ZL88;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -510,12 +514,15 @@
 			baseConfigurationReference = DEC082614CA4ADA1D1398380 /* Pods-HRSafeComponent_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4C4464ZL88;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HRSafeComponent/HRSafeComponent-Prefix.pch";
 				INFOPLIST_FILE = "HRSafeComponent/HRSafeComponent-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development *";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -525,12 +532,15 @@
 			baseConfigurationReference = 4F4D1D712E8BA949D12E34BC /* Pods-HRSafeComponent_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4C4464ZL88;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HRSafeComponent/HRSafeComponent-Prefix.pch";
 				INFOPLIST_FILE = "HRSafeComponent/HRSafeComponent-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development *";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
